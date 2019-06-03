@@ -95,7 +95,7 @@ class Image(Element):
         img = PILImg.open(self.img_path)
         img = img.convert(mode='L') # Ensure ImageOps will handle the data
         # img = ImageOps.invert(img) # Was needed before BMP header support
-        img = ImageOps.mirror(img) # Fixes BMP format columns order
+        img = ImageOps.flip(img) # Fixes BMP format columns order
         img = img.convert(mode='1') # Memobird needs 1-bit monochrome
         orders['basetext'] = b64encode(to_byte_array(img)).decode()
         return orders
