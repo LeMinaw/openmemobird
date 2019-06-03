@@ -4,4 +4,4 @@ Package to send data and documents to Memobird printers, without using the offic
 
 ## Installation
 
-`python3 -m pip install openmemobird`
+`python -m pip install openmemobird`
