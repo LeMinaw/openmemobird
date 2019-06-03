@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", 'r') as readme:
     setuptools.setup(
         name = 'openmemobird',
-        version = '1.0.0a3',
+        version = '1.0.0a4',
         author = "LeMinaw",
         author_email = "le@minaw.net",
         description = "Package to send data and documents to Memobird printers.",
